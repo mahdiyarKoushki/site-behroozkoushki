@@ -35,11 +35,39 @@ export const metadata = {
       "ارائه انواع خدمات ساختمانی شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله با 15 سال سابقه و تضمین کیفیت",
     siteName: "بهروز کوشکی",
   },
+  icons: {
+    icon: "https://cdn.tarhpik.com/5_Preview/1403/5/3/232951/Remote-photo-of-repair-logo-400.webp",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.jpg",
+    other: {
+      rel: "apple-touch-icon",
+      url: "/apple-icon.jpg",
+    },
+  },
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function() {
+              try {
+                var savedTheme = localStorage.getItem('selectedTheme');
+                if (savedTheme) {
+                  document.documentElement.setAttribute('data-theme', savedTheme);
+                }
+              } catch (e) {
+                console.error('Error accessing localStorage:', e);
+              }
+            })();
+          `,
+          }}
+        />
+      </head>
       <body className={vazirmatn.className} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
@@ -51,3 +79,6 @@ export default function RootLayout({ children }) {
   )
 }
 
+
+
+import './globals.css'
