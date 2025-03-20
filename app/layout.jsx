@@ -51,6 +51,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
       <head>
+      <meta name="google-site-verification" content="8P_G3SLb8cE9-tFCk_JN0K_hYS5QUPEfVk1Y0d4KD80" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
