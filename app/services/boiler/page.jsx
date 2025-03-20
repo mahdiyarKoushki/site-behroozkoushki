@@ -20,7 +20,7 @@ export default function BoilerPage() {
       <HeroSection
         title="نصب و تعمیر پکیج"
         description="نصب، سرویس و تعمیر انواع پکیج و سیستم‌های گرمایشی با قطعات اصلی و ضمانت کیفیت توسط بهروز کوشکی"
-        imageSrc="/placeholder.svg?height=800&width=1600&text=Boiler+Installation"
+        imageSrc="/packg2.png"
         primaryButtonText="درخواست مشاوره رایگان"
         primaryButtonLink="/contact"
       />

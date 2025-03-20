@@ -20,7 +20,7 @@ export default function FaucetInstallationPage() {
       <HeroSection
         title="نصب شیرآلات ساختمانی"
         description="نصب انواع شیرآلات، سینک، روشویی، توالت، وان و سایر تجهیزات بهداشتی با بهترین کیفیت و قیمت مناسب توسط بهروز کوشکی"
-        imageSrc="/placeholder.svg?height=800&width=1600&text=Faucet+Installation"
+       imageSrc="/shir1.png"
         primaryButtonText="درخواست مشاوره رایگان"
         primaryButtonLink="/contact"
       />
