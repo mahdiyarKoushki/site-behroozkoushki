@@ -132,7 +132,7 @@ export default function Home() {
             <ServiceCard
               title="نصب و تعمیر پکیج"
               description="نصب، سرویس و تعمیر انواع پکیج و سیستم‌های گرمایشی با قطعات اصلی و ضمانت"
-              icon="/packg1.jpg"
+              icon="/packg2.jpg"
               link="/services/boiler"
             />
             <ServiceCard

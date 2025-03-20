@@ -29,7 +29,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "fa_IR",
-    url: "https://behroozkooshki.ir",
+    url: "https://behrooz.koushky.ir/",
     title: "بهروز کوشکی | متخصص خدمات ساختمانی در تهران",
     description:
       "ارائه انواع خدمات ساختمانی شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله با 15 سال سابقه و تضمین کیفیت",
