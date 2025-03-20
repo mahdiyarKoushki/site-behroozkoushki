@@ -28,7 +28,7 @@ export default function TilingPage() {
       <HeroSection
         title="کاشی کاری و نمای ساختمان"
         description="اجرای انواع کاشی کاری، سرامیک و نمای ساختمان با طرح‌های متنوع و کیفیت بالا توسط بهروز کوشکی"
- imageSrc="/kashi2.png"
+ imageSrc="/kashi1.jpg"
         primaryButtonText="درخواست مشاوره رایگان"
         primaryButtonLink="/contact"
       />
