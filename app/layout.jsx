@@ -41,7 +41,7 @@ export const metadata = {
     apple: "/apple-icon.png",
     other: {
       rel: "apple-touch-icon",
-      url: "/apple-icon.png",
+      url: "/apple-icon.jpg",
     },
   },
     generator: 'v0.dev'
