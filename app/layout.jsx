@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "بهروز کوشکی",
   },
   icons: {
-    icon: "https://cdn.tarhpik.com/5_Preview/1403/5/3/232951/Remote-photo-of-repair-logo-400.webp",
+    icon: "/repair-logo.jpg",
     shortcut: "/favicon.ico",
     apple: "/apple-icon.jpg",
     other: {

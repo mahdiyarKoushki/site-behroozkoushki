@@ -35,8 +35,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold">شماره تماس</h3>
-                    <p className="text-muted-foreground">۰۹۱۲۳۴۵۶۷۸۹</p>
-                    <p className="text-muted-foreground">۰۲۱-۸۸۷۶۵۴۳۲</p>
+                    <p className="text-muted-foreground">09128066569</p>
+                    {/* <p className="text-muted-foreground">۰۲۱-۸۸۷۶۵۴۳۲</p> */}
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -75,6 +75,7 @@ export default function ContactPage() {
                   بهروز کوشکی خدمات ساختمانی خود را در تمامی مناطق تهران ارائه می‌دهد:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
+                  <span className="bg-muted p-2 rounded">پیروزی</span>
                   <span className="bg-muted p-2 rounded">نیاوران</span>
                   <span className="bg-muted p-2 rounded">فرمانیه</span>
                   <span className="bg-muted p-2 rounded">زعفرانیه</span>

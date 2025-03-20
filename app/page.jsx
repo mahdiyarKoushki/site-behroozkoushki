@@ -238,7 +238,7 @@ export default function Home() {
               <p className="mt-2">با بهروز کوشکی تماس بگیرید. خدمات ۲۴ ساعته در تمامی نقاط تهران.</p>
             </div>
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
-              <Link href="tel:09123456789">تماس اضطراری: ۰۹۱۲۳۴۵۶۷۸۹</Link>
+              <Link href="tel:09128066569">تماس اضطراری: 09128066569</Link>
             </Button>
           </div>
         </div>

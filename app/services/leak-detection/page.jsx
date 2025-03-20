@@ -181,7 +181,7 @@ export default function LeakDetectionPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="font-bold">تلفن:</span>
-                    <span>۰۹۱۲۳۴۵۶۷۸۹</span>
+                    <span>09128066569۹</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="font-bold">ایمیل:</span>
@@ -197,6 +197,7 @@ export default function LeakDetectionPage() {
                 <h3 className="text-xl font-bold mb-4">مناطق تحت پوشش</h3>
                 <p className="mb-4">خدمات تشخیص ترکیدگی لوله در تمامی مناطق تهران:</p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
+                  <span>پیروزی</span>
                   <span>نیاوران</span>
                   <span>فرمانیه</span>
                   <span>زعفرانیه</span>
@@ -275,7 +276,7 @@ export default function LeakDetectionPage() {
               <p className="mt-2">با بهروز کوشکی تماس بگیرید. تشخیص دقیق محل نشتی با کمترین تخریب.</p>
             </div>
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
-              <Link href="tel:09123456789">تماس اضطراری: ۰۹۱۲۳۴۵۶۷۸۹</Link>
+              <Link href="tel:09128066569">تماس اضطراری: 09128066569</Link>
             </Button>
           </div>
         </div>

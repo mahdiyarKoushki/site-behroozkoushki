@@ -37,12 +37,12 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button asChild className="hidden md:flex">
+          {/* <Button asChild className="hidden md:flex">
             <Link href="tel:09123456789">
               <Phone className="ml-2 h-4 w-4" />
               تماس سریع
             </Link>
-          </Button>
+          </Button> */}
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -63,12 +63,12 @@ const Header = () => {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild className="mt-4">
+                {/* <Button asChild className="mt-4">
                   <Link href="tel:09123456789">
                     <Phone className="ml-2 h-4 w-4" />
                     تماس سریع
                   </Link>
-                </Button>
+                </Button> */}
               </nav>
             </SheetContent>
           </Sheet>

@@ -216,7 +216,7 @@ export default function TilingPage() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="font-bold">تلفن:</span>
-                    <span>۰۹۱۲۳۴۵۶۷۸۹</span>
+                    <span>09128066569</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="font-bold">ایمیل:</span>
@@ -299,7 +299,7 @@ export default function TilingPage() {
               <p className="mt-2">با بهروز کوشکی تماس بگیرید. اجرای تخصصی انواع کاشی کاری با ضمانت کیفیت.</p>
             </div>
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
-              <Link href="tel:09123456789">تماس اضطراری: ۰۹۱۲۳۴۵۶۷۸۹</Link>
+              <Link href="tel:09128066569">تماس اضطراری: 09128066569</Link>
             </Button>
           </div>
         </div>
