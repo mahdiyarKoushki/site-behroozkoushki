@@ -38,10 +38,10 @@ export const metadata = {
   icons: {
     icon: "/repair-logo.jpg",
     shortcut: "/favicon.ico",
-    apple: "/apple-icon.jpg",
+    apple: "/apple-icon.png",
     other: {
       rel: "apple-touch-icon",
-      url: "/apple-icon.jpg",
+      url: "/apple-icon.png",
     },
   },
     generator: 'v0.dev'

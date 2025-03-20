@@ -32,7 +32,7 @@ export default function Home() {
       <HeroSection
         title="بهروز کوشکی - متخصص خدمات ساختمانی"
         description="با بیش از ۱۵ سال تجربه در ارائه خدمات ساختمانی با کیفیت و حرفه‌ای شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله و تمامی خدمات ساختمانی در تهران"
-        imageSrc="/serv.png"
+        imageSrc="/serv.jpg"
         primaryButtonText="درخواست مشاوره رایگان"
         primaryButtonLink="/contact"
         secondaryButtonText="مشاهده خدمات"
@@ -114,37 +114,37 @@ export default function Home() {
             <ServiceCard
               title="لوله کشی ساختمان"
               description="طراحی و اجرای سیستم‌های لوله کشی آب سرد و گرم، فاضلاب و گاز برای ساختمان‌های مسکونی و تجاری"
-              icon="/lole1.png"
+              icon="/lole1.jpg"
               link="/services/plumbing"
             />
             <ServiceCard
               title="تشخیص ترکیدگی لوله"
               description="تشخیص دقیق محل ترکیدگی لوله با استفاده از تجهیزات پیشرفته و رفع مشکل با کمترین تخریب"
-               icon="/lole5.png"
+               icon="/lole5.jpg"
               link="/services/leak-detection"
             />
             <ServiceCard
               title="نصب شیرآلات"
               description="نصب انواع شیرآلات، سینک، روشویی، توالت، وان و سایر تجهیزات بهداشتی با ضمانت کیفیت"
-              icon="/shir2.png"
+              icon="/shir2.jpg"
               link="/services/faucet-installation"
             />
             <ServiceCard
               title="نصب و تعمیر پکیج"
               description="نصب، سرویس و تعمیر انواع پکیج و سیستم‌های گرمایشی با قطعات اصلی و ضمانت"
-              icon="/packg1.png"
+              icon="/packg1.jpg"
               link="/services/boiler"
             />
             <ServiceCard
               title="کاشی کاری و نمای ساختمان"
               description="اجرای انواع کاشی کاری، سرامیک و نمای ساختمان با طرح‌های متنوع و کیفیت بالا"
-              icon="/kashi1.png"
+              icon="/kashi1.jpg"
               link="/services/tiling"
             />
             <ServiceCard
               title="رفع نم و رطوبت"
               description="تشخیص علت نم و رطوبت و رفع اصولی آن با استفاده از روش‌های نوین و مواد با کیفیت"
-                icon="/nam.png"
+                icon="/nam.jpg"
               link="/services/moisture-removal"
             />
           </div>
@@ -164,35 +164,35 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <PortfolioItem
-       imageSrc="/lolekar6.png"
+       imageSrc="/lolekar6.jpg"
               title="لوله کشی ساختمان مسکونی"
               description="لوله کشی کامل آب و فاضلاب یک ساختمان مسکونی در منطقه سعادت آباد"
             />
             <PortfolioItem
-              imageSrc="/lolekar3.png"
+              imageSrc="/lolekar3.jpg"
               title="تشخیص و رفع ترکیدگی لوله"
               description="تشخیص دقیق محل ترکیدگی لوله و تعمیر آن با کمترین تخریب در منطقه نیاوران"
             />
             <PortfolioItem
-                   imageSrc="/lolekar2.png"
+                   imageSrc="/lolekar2.jpg"
               
                title="بازسازی سرویس بهداشتی"
               description="بازسازی کامل سرویس بهداشتی شامل کاشی کاری و نصب شیرآلات در منطقه پاسداران"
             />
             <PortfolioItem
-            imageSrc="/lolekar1.png"
+            imageSrc="/lolekar1.jpg"
                          
               title="نصب پکیج دیواری"
               description="نصب و راه اندازی پکیج دیواری و رادیاتور در یک واحد آپارتمانی در منطقه ونک"
             />
             <PortfolioItem
-              imageSrc="/kashikar2.png"
+              imageSrc="/kashikar2.jpg"
               title="کاشی کاری آشپزخانه"
               description="اجرای کاشی کاری مدرن آشپزخانه در یک منزل مسکونی در منطقه جردن"
             />
             <PortfolioItem
               
-              imageSrc="/nam.png"
+              imageSrc="/nam.jpg"
               title="رفع نم دیوار"
               description="تشخیص علت نم دیوار و رفع اصولی آن در یک ساختمان اداری در منطقه میرداماد"
             />

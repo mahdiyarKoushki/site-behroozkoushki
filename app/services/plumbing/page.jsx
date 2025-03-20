@@ -27,7 +27,7 @@ export default function PlumbingPage() {
       <HeroSection
         title="خدمات لوله کشی ساختمان"
         description="ارائه انواع خدمات لوله کشی ساختمان شامل لوله کشی آب سرد و گرم، فاضلاب و گاز با بهترین کیفیت و نازل‌ترین قیمت توسط بهروز کوشکی"
-        imageSrc="/lole4.png"
+        imageSrc="/lole4.jpg"
         primaryButtonText="درخواست مشاوره رایگان"
         primaryButtonLink="/contact"
       />

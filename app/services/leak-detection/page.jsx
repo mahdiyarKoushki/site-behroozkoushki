@@ -20,7 +20,7 @@ export default function LeakDetectionPage() {
       <HeroSection
         title="تشخیص ترکیدگی لوله"
         description="تشخیص دقیق محل ترکیدگی و نشتی لوله با استفاده از تجهیزات پیشرفته و رفع مشکل با کمترین تخریب توسط بهروز کوشکی"
-       imageSrc="/lole5.png"
+       imageSrc="/lole5.jpg"
         primaryButtonText="درخواست مشاوره رایگان"
         primaryButtonLink="/contact"
       />
