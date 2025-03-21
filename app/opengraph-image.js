@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og"
 
-// Route segment config
+ // Route segment config
 export const runtime = "edge"
 
 // Image metadata
@@ -15,9 +15,6 @@ export const contentType = "image/png"
 // Image generation
 export default async function Image() {
   // Font
-//   const vazirFont = fetch(
-//     new URL("https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff2", import.meta.url),
-//   ).then((res) => res.arrayBuffer())
 
   return new ImageResponse(
     // ImageResponse JSX element
@@ -50,14 +47,14 @@ export default async function Image() {
       // For convenience, we can re-use the exported opengraph-image
       // size config to also set the ImageResponse's width and height.
       ...size,
-      fonts: [
-        {
-          name: "Vazir",
-        //   data: await vazirFont,
-          style: "normal",
-          weight: 700,
-        },
-      ],
+    //   fonts: [
+    //     {
+    //       name: "Vazir",
+    //       data:  vazirFont,
+    //       style: "normal",
+    //       weight: 700,
+    //     },
+    //   ],
     },
   )
 }
