@@ -5,17 +5,51 @@ import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/hero-section"
 import PortfolioItem from "@/components/portfolio-item"
+import JsonLd from "@/components/json-ld"
 
 export const metadata = {
   title: "لوله بازکنی | بهروز کوشکی | متخصص لوله بازکنی در تهران",
   description:
     "بهروز کوشکی متخصص لوله بازکنی با 15 سال سابقه در تهران. رفع گرفتگی انواع لوله و فاضلاب با استفاده از تجهیزات پیشرفته و روش‌های نوین. خدمات شبانه روزی با ضمانت کیفیت.",
   keywords: ["بهروز کوشکی", "لوله بازکنی", "رفع گرفتگی لوله", "تخلیه چاه", "لایروبی فاضلاب", "گرفتگی سینک", "تهران"],
+  alternates: {
+    canonical: "https://behrooz.koushky.ir/services/drain-cleaning",
+  },
 }
 
 export default function DrainCleaningPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "لوله بازکنی",
+    serviceType: "لوله بازکنی و رفع گرفتگی",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "بهروز کوشکی - خدمات ساختمانی",
+      image: "https://behrooz.koushky.ir/logo.png",
+      url: "https://behrooz.koushky.ir",
+      telephone: "09128066569",
+      priceRange: "$$",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "تهران",
+    },
+    description:
+      "بهروز کوشکی متخصص لوله بازکنی با 15 سال سابقه در تهران. رفع گرفتگی انواع لوله و فاضلاب با استفاده از تجهیزات پیشرفته و روش‌های نوین. خدمات شبانه روزی با ضمانت کیفیت.",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "IRR",
+      },
+    },
+  }
+
   return (
     <>
+     <JsonLd data={jsonLd} />
       {/* Hero Section */}
       <HeroSection
         title="خدمات لوله بازکنی"

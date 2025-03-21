@@ -26,14 +26,42 @@ export const metadata = {
   ],
   authors: [{ name: "بهروز کوشکی" }],
   creator: "بهروز کوشکی",
+  publisher: "بهروز کوشکی",
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  metadataBase: new URL("https://behrooz.koushky.ir"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "fa-IR": "/",
+    },
+  },
   openGraph: {
     type: "website",
     locale: "fa_IR",
-    url: "https://behrooz.koushky.ir/",
+    url: "https://behrooz.koushky.ir",
     title: "بهروز کوشکی | متخصص خدمات ساختمانی در تهران",
     description:
       "ارائه انواع خدمات ساختمانی شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله با 15 سال سابقه و تضمین کیفیت",
     siteName: "بهروز کوشکی",
+    images: [
+      {
+        url: "https://behrooz.koushky.ir/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "بهروز کوشکی - متخصص خدمات ساختمانی",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "بهروز کوشکی | متخصص خدمات ساختمانی در تهران",
+    description:
+      "ارائه انواع خدمات ساختمانی شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله با 15 سال سابقه و تضمین کیفیت",
+    images: ["https://behroozkooshki.ir/og-image.jpg"],
   },
   icons: {
     icon: "/repair-logo.jpg",
@@ -44,7 +72,9 @@ export const metadata = {
       url: "/apple-icon.jpg",
     },
   },
-    generator: 'v0.dev'
+  verification: {
+    google: "8P_G3SLb8cE9-tFCk_JN0K_hYS5QUPEfVk1Y0d4KD80",
+  },
 }
 
 export default function RootLayout({ children }) {

@@ -5,17 +5,50 @@ import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/hero-section"
 import PortfolioItem from "@/components/portfolio-item"
+import JsonLd from "@/components/json-ld"
 
 export const metadata = {
   title: "رفع نم و رطوبت | بهروز کوشکی | متخصص رفع نم و رطوبت در تهران",
   description:
     "بهروز کوشکی متخصص رفع نم و رطوبت با 15 سال سابقه در تهران. تشخیص علت نم و رطوبت و رفع اصولی آن با استفاده از روش‌های نوین و مواد با کیفیت. خدمات شبانه روزی با ضمانت کیفیت.",
   keywords: ["بهروز کوشکی", "رفع نم", "رفع رطوبت", "نم زدگی دیوار", "رطوبت ساختمان", "عایق رطوبتی", "تهران"],
+  alternates: {
+    canonical: "https://behrooz.koushky.ir/services/moisture-removal",
+  },
 }
 
 export default function MoistureRemovalPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "رفع نم و رطوبت",
+    serviceType: "رفع نم و رطوبت ساختمان",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "بهروز کوشکی - خدمات ساختمانی",
+      image: "https://behrooz.koushky.ir/logo.png",
+      url: "https://behrooz.koushky.ir",
+      telephone: "09128066569",
+      priceRange: "$$",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "تهران",
+    },
+    description:
+      "بهروز کوشکی متخصص رفع نم و رطوبت با 15 سال سابقه در تهران. تشخیص علت نم و رطوبت و رفع اصولی آن با استفاده از روش‌های نوین و مواد با کیفیت. خدمات شبانه روزی با ضمانت کیفیت.",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "IRR",
+      },
+    },
+  }
   return (
     <>
+     <JsonLd data={jsonLd} />
       {/* Hero Section */}
       <HeroSection
         title="رفع نم و رطوبت ساختمان"

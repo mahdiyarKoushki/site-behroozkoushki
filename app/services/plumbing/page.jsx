@@ -4,6 +4,7 @@ import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/hero-section"
 import PortfolioItem from "@/components/portfolio-item"
+import JsonLd from "@/components/json-ld"
 
 export const metadata = {
   title: "خدمات لوله کشی ساختمان | بهروز کوشکی | متخصص لوله کشی در تهران",
@@ -18,11 +19,43 @@ export const metadata = {
     "لوله کشی گاز",
     "تعمیر لوله",
   ],
+  alternates: {
+    canonical: "https://behrooz.koushky.ir/services/plumbing",
+  },
 }
 
 export default function PlumbingPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "خدمات لوله کشی ساختمان",
+    serviceType: "لوله کشی",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "بهروز کوشکی - خدمات ساختمانی",
+      image: "https://behrooz.koushky.ir/logo.png",
+      url: "https://behrooz.koushky.ir",
+      telephone: "09128066569",
+      priceRange: "$$",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "تهران",
+    },
+    description:
+      "بهروز کوشکی متخصص لوله کشی ساختمان با 15 سال سابقه در تهران. لوله کشی آب، فاضلاب و گاز با بهترین کیفیت و نازل‌ترین قیمت. خدمات شبانه روزی با ضمانت کیفیت.",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "IRR",
+      },
+    },
+  }
   return (
     <>
+    <JsonLd data={jsonLd} />
       {/* Hero Section */}
       <HeroSection
         title="خدمات لوله کشی ساختمان"

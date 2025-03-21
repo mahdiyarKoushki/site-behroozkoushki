@@ -7,6 +7,7 @@ import HeroSection from "@/components/hero-section"
 import ServiceCard from "@/components/service-card"
 import TestimonialCard from "@/components/testimonial-card"
 import PortfolioItem from "@/components/portfolio-item"
+import JsonLd from "@/components/json-ld"
 
 export const metadata = {
   title: "بهروز کوشکی | متخصص خدمات ساختمانی در تهران | لوله کشی، کاشی کاری، تعمیرات",
@@ -21,14 +22,52 @@ export const metadata = {
     "تشخیص ترکیدگی لوله",
     "نصب شیرآلات",
     "تعمیر پکیج",
-    "خدمات ساختمانی",
+    "خدمات ساختمانی",  
   ],
+  alternates: {
+    canonical: "https://behrooz.koushky.ir",
+  },
 }
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "بهروز کوشکی - خدمات ساختمانی",
+    image: "https://behrooz.koushky.ir/logo.png",
+    url: "https://behrooz.koushky.ir",
+    telephone: "09128066569",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "تهران",
+      addressRegion: "تهران",
+      addressCountry: "IR",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 35.6892,
+      longitude: 51.389,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
+    },
+    sameAs: [
+      "https://www.instagram.com/behroozkooshki",
+      "https://www.facebook.com/behroozkooshki",
+      "https://twitter.com/behroozkooshki",
+    ],
+    priceRange: "$$",
+    servesCuisine: "خدمات ساختمانی",
+    description:
+      "بهروز کوشکی با 15 سال سابقه در ارائه خدمات ساختمانی شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله و تمامی خدمات ساختمانی در تهران با قیمت مناسب و تضمین کیفیت",
+  }
   return (
     <>
       {/* Hero Section */}
+      <JsonLd data={jsonLd} />
       <HeroSection
         title="بهروز کوشکی - متخصص خدمات ساختمانی"
         description="با بیش از ۱۵ سال تجربه در ارائه خدمات ساختمانی با کیفیت و حرفه‌ای شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله و تمامی خدمات ساختمانی در تهران"

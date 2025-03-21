@@ -5,17 +5,50 @@ import { CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/hero-section"
 import PortfolioItem from "@/components/portfolio-item"
+import JsonLd from "@/components/json-ld"
 
 export const metadata = {
   title: "نصب شیرآلات | بهروز کوشکی | متخصص نصب شیرآلات ساختمانی در تهران",
   description:
     "بهروز کوشکی متخصص نصب انواع شیرآلات ساختمانی با 15 سال سابقه در تهران. نصب شیرآلات، سینک، روشویی، توالت و سایر تجهیزات بهداشتی با بهترین کیفیت و قیمت مناسب.",
   keywords: ["بهروز کوشکی", "نصب شیرآلات", "نصب سینک", "نصب روشویی", "نصب توالت", "تعویض شیرآلات", "تهران"],
+  alternates: {
+    canonical: "https://behrooz.koushky.ir/services/faucet-installation",
+  },
 }
 
 export default function FaucetInstallationPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "نصب شیرآلات",
+    serviceType: "نصب شیرآلات ساختمانی",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "بهروز کوشکی - خدمات ساختمانی",
+      image: "https://behrooz.koushky.ir/logo.png",
+      url: "https://behrooz.koushky.ir",
+      telephone: "09128066569",
+      priceRange: "$$",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "تهران",
+    },
+    description:
+      "بهروز کوشکی متخصص نصب انواع شیرآلات ساختمانی با 15 سال سابقه در تهران. نصب شیرآلات، سینک، روشویی، توالت و سایر تجهیزات بهداشتی با بهترین کیفیت و قیمت مناسب.",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "IRR",
+      },
+    },
+  }
   return (
     <>
+     <JsonLd data={jsonLd} />
       {/* Hero Section */}
       <HeroSection
         title="نصب شیرآلات ساختمانی"
