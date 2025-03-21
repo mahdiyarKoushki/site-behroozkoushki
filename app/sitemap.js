@@ -1,10 +1,10 @@
 export default function sitemap() {
     const baseUrl = "https://behrooz.koushky.ir"
   
-    // تاریخ آخرین به‌روزرسانی
+
     const lastModified = new Date().toISOString()
   
-    // لیست مسیرهای سایت
+  
     const routes = [
       {
         url: `${baseUrl}`,
