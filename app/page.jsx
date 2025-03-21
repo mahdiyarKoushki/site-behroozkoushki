@@ -46,7 +46,7 @@ export default function Home() {
             <div className="md:w-1/2">
               <Image
                 src="/بهروز کوشکی.jpg"
-                alt="بهروز کوشکی - متخصص خدمات ساختمانی"
+                alt=" تصویر بهروز کوشکی"
                 width={600}
                 height={600}
                 className="rounded-lg object-cover"
