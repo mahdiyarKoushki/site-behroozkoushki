@@ -9,14 +9,15 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+
   const navLinks = [
-    { href: "/", label: "خانه" },
-    { href: "/services/plumbing", label: "لوله کشی" },
-    { href: "/services/leak-detection", label: "تشخیص ترکیدگی" },
-    { href: "/services/faucet-installation", label: "نصب شیرآلات" },
-    { href: "/services/moisture-removal", label: "رفع نم" },
-    { href: "/services/drain-cleaning", label: "لوله باز کنی" },
-    { href: "/contact", label: "تماس با ما" },
+    { href: "/", label: "خانه", description: "صفحه اصلی سایت بهروز کوشکی" },
+    { href: "/services/plumbing", label: "لوله کشی", description: "خدمات لوله کشی ساختمان در تهران" },
+    { href: "/services/leak-detection", label: "تشخیص ترکیدگی", description: "خدمات تشخیص ترکیدگی لوله در تهران" },
+    { href: "/services/faucet-installation", label: "نصب شیرآلات", description: "خدمات نصب شیرآلات در تهران" },
+    { href: "/services/moisture-removal", label: "رفع نم", description: "خدمات رفع نم و رطوبت در تهران" },
+    { href: "/services/drain-cleaning", label: "لوله باز کنی", description: "خدمات لوله بازکنی در تهران" },
+    { href: "/contact", label: "تماس با ما", description: "اطلاعات تماس با بهروز کوشکی" },
   ]
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
