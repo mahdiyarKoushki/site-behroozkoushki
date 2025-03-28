@@ -10,7 +10,7 @@ import PortfolioItem from "@/components/portfolio-item"
 import JsonLd from "@/components/json-ld"
 
 export const metadata = {
-  title: "بهروز کوشکی | متخصص خدمات ساختمانی در تهران | لوله کشی، کاشی کاری، تعمیرات",
+  title: "بهروز کوشکیت",
   description:
     "بهروز کوشکی با 15 سال سابقه در ارائه خدمات ساختمانی شامل لوله کشی، کاشی کاری، رفع نم، تشخیص ترکیدگی لوله و تمامی خدمات ساختمانی در تهران با قیمت مناسب و تضمین کیفیت",
   keywords: [
